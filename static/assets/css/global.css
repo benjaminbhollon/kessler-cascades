@@ -1,0 +1,102 @@
+:root {
+  --accent-color: #a5f0a2;
+  font-family: 'Trebuchet MS', Calibri, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  accent-color: var(--avocado-color);
+}
+
+.--center {
+  text-align: center;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+}
+
+a {
+  color: inherit;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+
+main, header > div {
+  width: calc(100% - 1em);
+  max-width: 575px;
+  display: inline-block;
+}
+
+main {
+  text-align: left;
+}
+
+/* Header */
+header h1 {
+  font-size: 2.25em;
+  margin: 0.25rem 0;
+  max-width: 700px;
+  display: inline-block;
+}
+
+header p {
+  margin-top: 0.25rem;
+}
+
+/* Navbar */
+.main-nav {
+  top: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+}
+
+.main-nav > a {
+  text-decoration: none;
+  padding: 0.5em;
+  display: inline-block;
+  transition: background-color 200ms, color 200ms;
+}
+
+.main-nav > a:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 2rem;
+}
+
+.codewithlove a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent-color);
+  transition: text-shadow 0.2s;
+}
+
+.codewithlove a:hover {
+  text-shadow: 0 0 0.6em;
+}

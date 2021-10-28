@@ -1,0 +1,24 @@
+{
+  "name": "kessler",
+  "version": "0.1.0",
+  "description": "A website to raise awareness about the dangers of Kessler Syndrome and how to avoid them. ",
+  "main": "app.js",
+  "scripts": {
+    "start": "pm2 start app.js --name=kessler && pm2 save",
+    "stop": "pm2 delete kessler && pm2 save",
+    "restart": "pm2 restart kessler",
+    "dev": "nodemon app.js"
+  },
+  "repository": "https://github.com/benjaminbhollon/kessler-cascades",
+  "author": "Benjamin Hollon",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pm2": "^5.1.2",
+    "pug": "^3.0.2"
+  }
+}
