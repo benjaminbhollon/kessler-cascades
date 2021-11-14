@@ -1,0 +1,54 @@
+extends layout.pug
+
+block variables
+  - title = 'Solutions'
+
+block content
+  article
+    p On this site, I discuss #[a(href="/" target="_blank" rel="noopener") the theory behind preventing a Kessler Cascade] in great detail. Knowing that a problem exists, though, is not enough. We need practical solutions to combat and reduce the onset of Kessler Syndrome.
+    p Here are some proposals that are actively being worked on by governments, organizations, and individuals around the world.
+    
+    h2#removal Capture and Return
+    p No matter what else we do, we're eventually going to bring some of the junk in orbit back down to Earth. A stable situation in orbit means Debris is being removed at the same rate it is generated.
+    p Now, debris does naturally deorbit. Trace amounts of Earth's atmosphere remain, even at the insane altitudes of orbital satellites, and these slow satellites down over the course of years to decades, eventually causing them to fall back to Earth. This effect does give us a base number of satellites we can launch each year without sparking a Cascade.
+    p In the last few years, the space industry has been massively ramping up the number of satellites it's launching, and this likely won't stop anytime soon. To be able to maintain this rapid progress without sacrificing #[a(href="/#impact" target="_blank" rel="noopener") services that we love], we need to supplement the natural deorbiting of debris with some of our own creative solutions.
+    section
+      h3#removal__large Large Debris Removal
+      p The largest pieces of debris (&gt;10cm in diameter) are the highest priority to remove, since they are the easiest for satellites to collide with (due to their size) and have the potential to create more pieces of debris upon collision.
+      p Luckily, they also have the most straightforward plans for removal.
+      p While dozens of far-fetched proposals exist, all the most reasonable solutions have the same basic idea behind them: launch a probe that meets up with a large piece of debris, connects with it, and tugs it back down into the atmosphere.
+      p: a(href="https://sea.pcmag.com/news/40569/the-european-space-agency-is-going-to-use-a-giant-claw-to-grab-space-junk" target="_blank" rel="noopener") The European Space Agency is currently planning a mission to implement this strategy.
+      
+      h3#removal__medium Medium Debris Removal
+      p For pieces of debris between 1cm and 10cm in diameter, the most practical solution also boasts the coolest name: the #[a(href="https://en.wikipedia.org/wiki/Laser_broom" target="_blank" rel="noopener") Laser Broom].
+      figure
+        img(src="/assets/images/Laser_broom_%28artistic%29.jpg" loading="lazy")
+        figcaption Artistic representation of a Laser Broom in action. 
+          a(href="https://commons.wikimedia.org/wiki/File:Laser_broom_(artistic).jpg") (Source, CC0)
+      p A laser broom would use a ground-based laser facility near Earth's equator to heat debris enough to change their orbits to ones that will deorbit faster. 
+        a(href="https://ntrs.nasa.gov/citations/20100002197" target="_blank" rel="noopener") A single laser broom facility near Earth's equator could deorbit all 150,000+ medium-sized debris fragments under 1,500km in altitude within only 3-5 years.
+    
+      h3#removal__small Small Debris Removal
+      p Sadly, 
+        a(href="https://ntrs.nasa.gov/citations/20100002197" target="_blank" rel="noopener") there is not yet a practical solution for removing debris smaller than 1cm in diameter
+        | . In addition, pieces this small are nearly impossible to track, though our best estimates project millions of these fragments.
+      p Debris as small as 0.2mm in diameter are safety hazards for satellites, and debris larger than 5mm can be mission-ending. Even a screw has the kinetic energy of a cannonball at orbital velocities, #[a(href="https://www.esa.int/Safety_Security/Space_Debris/Hypervelocity_impacts_and_protecting_spacecraft" target="_blank" rel="noopener") able to shred specially-woven kevlar fabric].
+      figure
+        img(src="/assets/images/Hypervelocity_Impact.png" loading="lazy")
+        figcaption The result of hypervelocity impact testing by the European Space Agency. 
+          a(href="https://www.esa.int/Safety_Security/Space_Debris/Hypervelocity_impacts_and_protecting_spacecraft" target="_blank" rel="nofollow") (Source, CC BY-SA 3.0 IGO)
+    
+    h2#tracking Tracking
+    p What if we could better predict where debris and satellites will be at any given moment? That could help us avoid collisions more often, buying time for researchers to figure out Capture and Return technology.
+    p I'd like to introduce you to 
+      a(href="https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=4131&context=smallsat" target="_blank" rel="noopener") ELROI, the Extremely Low-Resource Optical Identifier.
+    
+    p Billed as "[a] license plate for satellites that anyone can read," ELROI provides an innovative approach that aims to remove the workload of identifying from critical telescopes that are needed to identify debris (which is unable to identify itself). It works by firing a unique series of laser pulses at the Earth that could be conceivably be detected even by an amateur astronomer with the right equipment.
+    p What I love about this approach is how well it scales: it could enable volunteer organizations to handle the identification and tracking of telescopes with minimal effort and to easily find contact information for satellite operators if a collision is likely. The telescopes that have been used for this task can switch their efforts to instead locating debris that endangers satellites using ELROI and warn the operators in the same way.
+    p Of course, this approach loses a massive amount of effectiveness if it only has limited use. We'll likely need some form of legislation to help encourage its adoption.
+    
+    h2#legislation Legislation
+    p We're running out of time fast. If governments don't begin taking action to implement the plans above <em>now</em>, they might not have a chance later.
+    p To buy time, we should consider legislation to help slow down debris formation.
+    
+    h2#conclusion Conclusion

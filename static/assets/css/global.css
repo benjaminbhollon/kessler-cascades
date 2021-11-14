@@ -31,6 +31,15 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
 #content {
   flex: 1 0 auto;
 }
