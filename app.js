@@ -34,7 +34,8 @@ fs.readFile('.signatures','utf8',function(err, data){
           avo('signatures').value
             .map(s => `${s.name}|${s.from}`)
             .join('\n'),
-          {}
+          {},
+          () => false
         );
       });
     }
