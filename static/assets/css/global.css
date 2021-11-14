@@ -54,6 +54,22 @@ main {
   text-align: left;
 }
 
+/* Forms */
+input {
+  background-color: transparent;
+  font-size: inherit;
+  border: 2px solid;
+  padding: 0.5em;
+  display: block;
+  width: 100%;
+  max-width: 40ch;
+  margin-bottom: 0.25em;
+}
+
+label {
+  font-weight: bold;
+}
+
 /* Header */
 header h1 {
   font-size: 2.25em;
