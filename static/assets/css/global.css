@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #a5f0a2;
+  --accent-color: #ff9659;
   font-family: 'Trebuchet MS', Calibri, sans-serif;
   font-size: 1.1em;
   line-height: 1.5;
@@ -99,4 +99,8 @@ footer {
 
 .codewithlove a:hover {
   text-shadow: 0 0 0.6em;
+}
+
+::selection {
+  background-color: var(--accent-color)
 }
