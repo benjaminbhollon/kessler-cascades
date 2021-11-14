@@ -1,6 +1,5 @@
 {
   "/": "homepage",
   "/act/": "act",
-  "/solutions/": "solutions",
-  "/pledge/": "pledge"
+  "/solutions/": "solutions"
 }
